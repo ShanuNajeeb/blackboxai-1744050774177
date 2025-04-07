@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackbox AI - Landing Page</title>
+    <!-- Tailwind CSS (Production) -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Font (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Particles.js with local config -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles-config.js"></script>
+    <!-- Favicon (placeholder) -->
+    <link rel="icon" href="data:,">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Background Animation -->
+    <div id="particles-js"></div>
+    
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-black/80 backdrop-blur-lg p-4">
+        <a href="#"><img src="https://images.pexels.com/.../ai-logo.png" alt="Blackbox AI" class="h-10"></a>
+        <div class="flex space-x-4">
+            <a href="#features" class="text-white">Home</a>
+            <a href="#features" class="text-white">Features</a>
+            <a href="#pricing" class="text-white">Pricing</a>
+            <a href="#login" class="text-white">Login</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero min-h-screen flex items-center text-white">
+        <div class="container mx-auto px-4">
+            <h1 class="text-5xl font-extrabold">Code Smarter. Build Faster.</h1>
+            <p class="text-lg mt-4">Blackbox AI helps developers build websites, games, and software in minutes with intelligent code generation.</p>
+            <button class="bg-[#00FFFF] hover:bg-[#00CCFF] text-black font-bold py-2 px-4 rounded mt-4">Try it Free</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-[#1A1A1D]">
+        <div class="container grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="feature-card flex items-center p-6 rounded-lg bg-[#2D2D30]">
+                <i class="fa-solid fa-code text-[#00FFFF] text-2xl"></i>
+                <div class="ml-4">
+                    <h3 class="text-xl">AI Code Autocomplete</h3>
+                    <p>Instant suggestions for any coding language...</p>
+                </div>
+            </div>
+            <div class="feature-card flex items-center p-6 rounded-lg bg-[#2D2D30]">
+                <i class="fa-solid fa-file-alt text-[#00FFFF] text-2xl"></i>
+                <div class="ml-4">
+                    <h3 class="text-xl">Multi-file Editing Agent</h3>
+                    <p>Edit multiple files seamlessly...</p>
+                </div>
+            </div>
+            <div class="feature-card flex items-center p-6 rounded-lg bg-[#2D2D30]">
+                <i class="fa-solid fa-file-pdf text-[#00FFFF] text-2xl"></i>
+                <div class="ml-4">
+                    <h3 class="text-xl">PDF & YouTube Summarization</h3>
+                    <p>Get concise summaries of your content...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-[#1A1A1D]">
+        <div class="container grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="pricing-card bg-[#2D2D30] p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl">Free</h3>
+                <p class="text-3xl mt-2">$0/month</p>
+                <ul class="mt-4">
+                    <li>Basic AI Features</li>
+                    <li>10 Projects</li>
+                </ul>
+                <button class="mt-4 bg-[#00FFFF] text-black font-bold py-2 px-4 rounded">Start Free</button>
+            </div>
+            <div class="pricing-card bg-[#2D2D30] p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl">Pro</h3>
+                <p class="text-3xl mt-2">$19/month</p>
+                <ul class="mt-4">
+                    <li>Advanced AI Features</li>
+                    <li>Unlimited Projects</li>
+                </ul>
+                <button class="mt-4 bg-[#00FFFF] text-black font-bold py-2 px-4 rounded">Get Pro</button>
+            </div>
+            <div class="pricing-card bg-[#2D2D30] p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl">Enterprise</h3>
+                <p class="text-3xl mt-2">$49/month</p>
+                <ul class="mt-4">
+                    <li>All Features</li>
+                    <li>Dedicated Support</li>
+                </ul>
+                <button class="mt-4 bg-[#00FFFF] text-black font-bold py-2 px-4 rounded">Contact Us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8">
+        <div class="container flex justify-between items-center">
+            <p class="text-gray-400 text-sm">© 2024 Blackbox AI</p>
+            <div class="flex space-x-4">
+                <a href="#"><i class="fa-brands fa-twitter text-[#00FFFF]"></i></a>
+                <a href="#"><i class="fa-brands fa-github text-[#00FFFF]"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            try {
+                if (typeof particlesJS !== 'undefined' && typeof particlesConfig !== 'undefined') {
+                    particlesJS('particles-js', particlesConfig);
+                } else {
+                    console.log('Particles.js disabled - required libraries not loaded');
+                    document.getElementById('particles-js').style.display = 'none';
+                }
+            } catch (error) {
+                console.error('Particles initialization error:', error);
+                document.getElementById('particles-js').style.backgroundColor = '#121212';
+            }
+        });
+    </script>
+</body>
+</html>
